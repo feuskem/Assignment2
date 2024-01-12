@@ -26,6 +26,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	USpringArmComponent* SpringArm;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float MovementScale;
+
 	UPROPERTY(BlueprintReadWrite, ReplicatedUsing = OnRep_PlayerSpeedChanged)
 	float Speed;
 
